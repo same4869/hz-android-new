@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp60"
+    android:background="@drawable/comm_list_item_selector" >
+
+    <ImageView
+        android:id="@+id/comm_fuction_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp15"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:id="@+id/comm_fuction_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_toRightOf="@+id/comm_fuction_icon"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/color_text"
+        android:textSize="@dimen/sp14" />
+
+    <TextView
+        android:id="@+id/comm_fuction_title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp2"
+        android:layout_toRightOf="@+id/comm_fuction_title"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/color_text"
+        android:textSize="@dimen/sp12" />
+
+    <ImageView
+        android:id="@+id/comm_fuction_redpoint"
+        style="@style/redPoint"
+        android:layout_alignRight="@+id/comm_fuction_icon"
+        android:layout_alignTop="@+id/comm_fuction_icon"
+        android:layout_marginRight="@dimen/dpn3"
+        android:layout_marginTop="@dimen/dpn3"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/comm_fuction_redpoint_title_img"
+        style="@style/redPoint"
+        android:layout_alignRight="@+id/comm_fuction_title"
+        android:layout_alignTop="@+id/comm_fuction_title"
+        android:layout_marginRight="@dimen/dpn8"
+        android:layout_marginTop="@dimen/dpn3"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp15"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/comm_fuction_redMessage"
+            style="@style/textRedPoint"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/comm_fuction_hint_messsage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:textColor="@color/te_text_note_1"
+            android:textSize="@dimen/sp14"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/comm_fuction_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:src="@mipmap/comm_icon_arrow" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

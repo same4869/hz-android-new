@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/title_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp36"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp20"
+        android:orientation="horizontal">
+
+        <com.renren.wawa.view.CommRoundAngleImageView
+            android:id="@+id/notification__avatar"
+            android:layout_width="@dimen/dp35"
+            android:layout_height="@dimen/dp35"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/notification_user_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:gravity="center_vertical"
+            android:text="@string/app_name"
+            android:textColor="@color/te_text_section_1"
+            android:textSize="@dimen/sp16" />
+
+        <TextView
+            android:id="@+id/notification_action_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="系统通知"
+            android:textColor="@color/te_text_note_1"
+            android:textSize="@dimen/sp16" />
+
+        <TextView
+            android:id="@+id/notification_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp4"
+            android:gravity="center"
+            android:text="4月12号"
+            android:textColor="@color/te_text_note_1"
+            android:textSize="@dimen/sp13" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/notification_myself_content_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp20"
+        android:layout_marginLeft="@dimen/dp65"
+        android:layout_marginRight="@dimen/dp20"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lineSpacingMultiplier="1.2"
+        android:text="我的评论：本篇为我的部分读书笔记，所以看到什么，觉得还比较有用就顺便写了下来，内容并不一定适合所有人。"
+        android:textColor="@color/te_text_note_1"
+        android:textSize="@dimen/sp15"
+        android:visibility="visible" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/seperator" />
+
+</LinearLayout>

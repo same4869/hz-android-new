@@ -1,0 +1,155 @@
+<resources>
+    <!--<string name="app_name">好抓抓娃娃</string>-->
+    <string name="app_name">好抓抓娃娃</string>
+
+    <string name="notification">我的通知</string>
+
+    <!--登录-->
+    <string name="email_hint">邮箱地址</string>
+    <string name="passwd_hint">密码</string>
+    <string name="signin_email">邮箱登录</string>
+    <string name="terms_and_policy">登录注册表示同意用户协议与隐私条款</string>
+    <string name="select_we_chat_login">微信一键登录</string>
+    <string name="select_email_login">使用邮箱登录</string>
+    <string name="we_chat_login">微信登录</string>
+    <string name="email_null">邮箱不能为空</string>
+    <string name="passwd_null">密码不能为空</string>
+    <string name="email_type_error">邮箱格式错误</string>
+    <string name="terms_and_policy_check">请勾选用户协议与隐私条款</string>
+
+    <!--主机面-->
+    <string name="settings">设置</string>
+    <string name="profile">我的娃娃</string>
+    <string name="close">关闭</string>
+    <string name="help">求助</string>
+    <string name="start_game">开始游戏</string>
+    <string name="exchange">换一批</string>
+
+
+    <!--设置-->
+    <string name="settings_money">我的喵喵币</string>
+    <string name="settings_scratch_record">抓取记录</string>
+    <string name="settings_input_invitation_code">输入邀请码</string>
+    <string name="settings_invitation_award">邀请奖励</string>
+    <string name="settings_background_music">背景音乐</string>
+    <string name="settings_sound_effect">音效</string>
+    <string name="settings_feedback">问题反馈</string>
+    <string name="settings_logout">退出登录</string>
+    <string name="settings_exchange_service">切换服务器</string>
+    <string name="settings_about">关于我们</string>
+
+
+    <string name="invitation_code_tips">邀请好友加入 \n 就可以获得喵喵币奖励</string>
+    <string name="invitation_code_btn">分享邀请码</string>
+    <string name="input_invitation_code_tips">填写好友给你的邀请码</string>
+    <string name="submit">提交</string>
+    <string name="input_invitation_code_hint">输入邀请码</string>
+    <string name="invitation_success">输入好友的邀请码成功</string>
+    <string name="invitation_faild">你已经输入过邀请码</string>
+    <string name="feedback_tips">前往公众号留言，\n 您的反馈会得到及时的回应</string>
+    <string name="scratch_doll_tips">直播抓娃娃</string>
+
+    <string name="assess_score">给我评分</string>
+    <string name="user_Protocol">用户协议</string>
+    <string name="app_score_no_market">没有找到应用市场，安装好了再来吧</string>
+    <string name="developer">开发者</string>
+    <string name="developer_mode">开发者模式</string>
+    <string name="developer_select">开发者选项</string>
+    <string name="developer_api">API地址</string>
+
+    <!--游戏详情-->
+    <string name="count">数量</string>
+    <string name="number">游戏编号</string>
+    <string name="current_status">当前状态</string>
+    <string name="exchange_wawa_coin">可换喵喵币</string>
+    <string name="watch_game_video">观看游戏视频</string>
+    <string name="game_detail">游戏详情</string>
+    <string name="send_goods_info">发货信息(订单号: %d)</string>
+    <string name="remarks">备注</string>
+    <string name="add_remarks">添加备注</string>
+    <string name="add_send_out_address">+ 添加新地址</string>
+    <string name="postage">邮费</string>
+    <string name="current_wawa_coin">当前我的喵喵币: %d</string>
+    <string name="pay_and_shipping">支付并发货</string>
+    <string name="request_shipping">合并发货</string>
+    <string name="save">提交</string>
+    <string name="add_remarks_hint">请填写要添加的备注</string>
+    <string name="no_postage">超过2件包邮</string>
+    <string name="new_address">新建地址</string>
+    <string name="user_name">收货人</string>
+    <string name="user_phone">手机号码</string>
+    <string name="user_district">所在地区</string>
+    <string name="user_detailed_address">详细地址</string>
+    <string name="city">城市</string>
+    <string name="province">省份</string>
+    <string name="county">区/县</string>
+    <string name="exchage_wawa_coin_title">换喵喵币</string>
+    <string name="exchage_wawa_coin_message">确认把这个娃娃兑换成喵喵币吗？</string>
+    <string name="convert">兑换</string>
+    <string name="shipping_address">地址管理</string>
+    <string name="appeal">我要申诉</string>
+    <string name="video_envidence">视频证据</string>
+    <string name="upload_video">上传视频</string>
+    <string name="appeal_upload_video_tips">需先上传视频</string>
+    <string name="appeal_reason">请选择具体原因，我们将尽快跟您回复</string>
+    <string name="video_already">已有视频</string>
+    <string name="submit_appeal">提交申诉</string>
+    <string name="no_video_tips">本地没有视频，是否从云端加载？</string>
+    <string name="appeal_season_hint">请填入申诉理由</string>
+    <string name="modify_address">修改地址</string>
+    <string name="delete_address_sure">你确定删除这个邮寄地址</string>
+    <string name="game_video_url_error">游戏视频生成中</string>
+
+
+    <!--我的娃娃-->
+    <string name="my_doll">我的娃娃</string>
+    <string name="scratch_count">共抓中 %d 次</string>
+    <string name="shipping_info">物流信息</string>
+
+
+    <!--公共模块-->
+    <string name="comm_load_ing">加载中...</string>
+    <string name="comm_active_no_network">网络好像不太好呀，点我刷新</string>
+    <string name="comm_tips_cancel">取消</string>
+    <string name="comm_tips_confirm">确定</string>
+    <string name="login_out">你确定退出登录吗？</string>
+
+
+    <!-- listview中的提示 -->
+    <string name="pull_to_refresh_from_bottom_pull_label">上拉加载</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">正在加载</string>
+    <string name="pull_to_refresh_from_bottom_release_label">松开加载</string>
+    <string name="pull_to_refresh_tap_label">点击刷新</string>
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_release_label">松开刷新</string>
+    <string name="pull_to_refresh_refreshing_label">正在刷新</string>
+
+    <!--网络-->
+    <string name="error_network">网络异常，快检查一下！</string>
+
+
+    <string name="recharge_holl">充喵喵币</string>
+
+    <!-- WXPayEntryActivity -->
+    <string name="pay_result_tip">这个界面用于显示第三方app通过微信支付的结果</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+
+
+    <!-- PayActivity -->
+    <string name="pay_success">支付成功</string>
+    <string name="pay_failed">支付失败</string>
+    <string name="pay_cancel">取消支付</string>
+
+    <!--游戏-->
+    <string name="game_fail_tip"> 没抓到！\n QAQ~嘤嘤嘤!</string>
+    <string name="game_back"> 退出</string>
+    <string name="game_continu"> 再来一局</string>
+    <string name="game_success_tip"> 亲真厉害！抓取成功</string>
+    <string name="game_look_wawa"> 查看看娃娃</string>
+
+
+    <!-- msgadapter -->
+    <item type="id" name="tag_first"></item>
+    <item type="id" name="tag_second"></item>
+
+</resources>

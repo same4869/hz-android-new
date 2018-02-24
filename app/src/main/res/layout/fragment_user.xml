@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp180"
+        android:background="@color/themeColor">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp50v"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.renren.wawa.view.CommRoundAngleImageView
+                android:id="@+id/user_img"
+                android:layout_width="@dimen/dp60"
+                android:layout_height="@dimen/dp60"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:text="去吧皮卡丘" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.renren.wawa.view.CommFuctionEntryBar
+        android:id="@+id/user_scratch_record"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:layout_marginStart="@dimen/dp16"
+        app:fuctionIconRes="@drawable/icon_record"
+        app:fuctionPaddingLeft="0dp"
+        app:fuctionShowTopLine="false"
+        app:fuctionSwitch="false"
+        app:fuctionTitle="抓取记录" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginStart="@dimen/dp15"
+        android:background="@color/seperator" />
+
+    <com.renren.wawa.view.CommFuctionEntryBar
+        android:id="@+id/user_scratched_wawa"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:layout_marginStart="@dimen/dp16"
+        app:fuctionIconRes="@drawable/icon_wawa"
+        app:fuctionPaddingLeft="0dp"
+        app:fuctionShowTopLine="true"
+        app:fuctionSwitch="false"
+        app:fuctionTitle="我的娃娃" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginStart="@dimen/dp15"
+        android:background="@color/seperator" />
+
+    <com.renren.wawa.view.CommFuctionEntryBar
+        android:id="@+id/user_address_manage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:layout_marginStart="@dimen/dp16"
+        app:fuctionIconRes="@drawable/icon_address"
+        app:fuctionPaddingLeft="0dp"
+        app:fuctionShowTopLine="true"
+        app:fuctionSwitch="false"
+        app:fuctionTitle="地址管理" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginStart="@dimen/dp15"
+        android:background="@color/seperator" />
+
+    <com.renren.wawa.view.CommFuctionEntryBar
+        android:id="@+id/user_notification"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:layout_marginStart="@dimen/dp16"
+        app:fuctionIconRes="@drawable/icon_msg"
+        app:fuctionPaddingLeft="0dp"
+        app:fuctionShowTopLine="true"
+        app:fuctionSwitch="false"
+        app:fuctionTitle="我的通知" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/seperator" />
+
+</LinearLayout>

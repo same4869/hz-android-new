@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_bg_1"
+    android:orientation="vertical">
+
+    <com.renren.wawa.view.CommTitleBarView
+        android:id="@+id/title_bar"
+        style="@style/CommTitleBarViewStyle"
+        app:titleText="@string/appeal" />
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_bar"
+        android:layout_marginBottom="@dimen/dp50">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--视频信息-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp20"
+                android:background="@drawable/bg_border_view"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp10">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dp130"
+                    android:layout_height="@dimen/dp130"
+                    android:background="@drawable/bg_list_item_border_view">
+
+                    <ImageView
+                        android:id="@+id/session_avatar"
+                        android:layout_width="@dimen/dp120"
+                        android:layout_height="@dimen/dp120"
+                        android:layout_centerInParent="true" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp130"
+                    android:layout_marginLeft="@dimen/dp20">
+
+                    <TextView
+                        android:id="@+id/appeal_title_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/video_envidence"
+                        android:textColor="#4A4A4A"
+                        android:textSize="@dimen/sp13" />
+
+                    <TextView
+                        android:id="@+id/appeal_status_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dp5"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:layout_toLeftOf="@+id/session_video"
+                        android:text="@string/appeal_upload_video_tips"
+                        android:textColor="#9B9B9B"
+                        android:textSize="@dimen/sp12" />
+
+                    <ImageButton
+                        android:id="@+id/session_video"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="@dimen/dp5"
+                        android:layout_marginRight="@dimen/dp5"
+                        android:background="@android:color/transparent"
+                        android:src="@mipmap/icon_video" />
+
+                    <Button
+                        android:id="@+id/upload_video_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/bg_corners_yellow_btn"
+                        android:paddingBottom="@dimen/dp5"
+                        android:paddingLeft="@dimen/dp10"
+                        android:paddingRight="@dimen/dp10"
+                        android:paddingTop="@dimen/dp5"
+                        android:text="@string/upload_video"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp15" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/seperator" />
+
+            <!--申诉原因-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10"
+                android:background="@drawable/bg_border_view">
+
+                <TextView
+                    android:id="@+id/appeal_reason_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginStart="@dimen/dp10"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:text="@string/appeal_reason"
+                    android:textColor="#343339"
+                    android:textSize="@dimen/sp15" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/reason_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/appeal_reason_txt"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:focusable="false"
+                    android:padding="@dimen/dp18" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/view_bg_1"
+        android:padding="@dimen/dp10">
+
+        <Button
+            android:id="@+id/appeal_submit_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/dp10"
+            android:background="@drawable/bg_corners_btn_theme"
+            android:padding="@dimen/dp10"
+            android:text="@string/submit_appeal"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp15" />
+
+    </RelativeLayout>
+</RelativeLayout>

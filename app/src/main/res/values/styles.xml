@@ -1,0 +1,50 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor" tools:ignore="NewApi">@color/themeColor</item>
+    </style>
+
+    <style name="CommTitleBarViewStyle">
+        <item name="android:layout_height">@dimen/dp48</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/themeColor</item>
+        <item name="android:textSize">@dimen/sp18</item>
+    </style>
+
+    <style name="CommDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/black_translucent80</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/BottomUpDialogAnim</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="BottomUpDialogAnim">
+        <item name="android:windowEnterAnimation">@anim/comm_dialog_bottom_up</item>
+        <item name="android:windowExitAnimation">@anim/comm_dialog_bottom_down</item>
+    </style>
+
+    <style name="redPoint">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/comm_red_point</item>
+    </style>
+
+    <style name="textRedPoint">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/dp5</item>
+        <item name="android:paddingRight">@dimen/dp5</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">@dimen/dp3</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/sp12</item>
+        <item name="android:background">@drawable/comm_red_message</item>
+    </style>
+
+</resources>

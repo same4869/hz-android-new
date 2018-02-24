@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="HorizontalListView">
+        <attr name="dividerWidth" format="dimension" />
+        <attr name="android:divider" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:fadingEdgeLength" />
+    </declare-styleable>
+
+    <declare-styleable name="CommTitleBarView">
+        <attr name="backIconRes" format="reference" />
+        <attr name="menuIconRes" format="reference" />
+        <attr name="menuIconRes2" format="reference" />
+        <attr name="titleText" format="string" />
+        <attr name="menuText" format="string" />
+        <attr name="menuText2" format="string" />
+        <attr name="titleBackgroundColor" format="color"/>
+        <attr name="titleBarViewHeight" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="CommRoundAngleImageView">
+        <attr name="spaceSize" format="dimension" />
+        <attr name="drawableRadius" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="CommFuctionEntryBar">
+        <attr name="fuctionIconRes" format="reference" />
+        <attr name="fuctionTitle" format="string" />
+        <attr name="fuctionTitle2" format="string" />
+        <attr name="fuctionShowTopLine" format="boolean" />
+        <attr name="fuctionShowIconRes" format="boolean" />
+        <attr name="fuctionShowArrow" format="boolean" />
+        <attr name="fuctionSwitch" format="boolean" />
+        <attr name="fuctionTitleCenter" format="boolean" />
+        <attr name="fuctionPaddingLeft" format="dimension" />
+    </declare-styleable>
+</resources>

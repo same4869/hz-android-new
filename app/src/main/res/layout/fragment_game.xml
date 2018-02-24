@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100dp">
+
+        <com.tencent.ilivesdk.view.ILiveRootView
+            android:id="@+id/game_slave_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible" />
+
+        <com.tencent.ilivesdk.view.ILiveRootView
+            android:id="@+id/game_master_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.opendanmaku.DanmakuView
+            android:id="@+id/game_danmaku"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_gravity="top"
+            android:layout_marginTop="60dp"
+            app:end_Y_offset="0.8"
+            app:max_row="5"
+            app:max_running_per_row="2"
+            app:pick_interval="1000"
+            app:show_debug="false"
+            app:start_Y_offset="0.2" />
+
+        <LinearLayout
+            android:id="@+id/game_members"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp40"
+            android:layout_gravity="right|top"
+            android:layout_marginTop="@dimen/dp10"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/game_member_count"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="12dp"
+                android:drawableLeft="@mipmap/game_people"
+                android:gravity="center"
+                android:textColor="@color/themeColor"
+                android:textSize="@dimen/sp12" />
+
+            <ImageView
+                android:id="@+id/game_member_1"
+                android:layout_width="@dimen/dp32"
+                android:layout_height="@dimen/dp32"
+                android:layout_margin="@dimen/dp4"
+                android:background="@drawable/bg_avatar_small"
+                android:padding="@dimen/dp1"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/game_member_2"
+                android:layout_width="@dimen/dp32"
+                android:layout_height="@dimen/dp32"
+                android:layout_margin="@dimen/dp4"
+                android:background="@drawable/bg_avatar_small"
+                android:padding="@dimen/dp1"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/game_member_3"
+                android:layout_width="@dimen/dp32"
+                android:layout_height="@dimen/dp32"
+                android:layout_margin="@dimen/dp4"
+                android:background="@drawable/bg_avatar_small"
+                android:padding="@dimen/dp1"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/game_member_more"
+                android:layout_width="@dimen/dp36"
+                android:layout_height="@dimen/dp40"
+                android:src="@mipmap/icon_more"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/im_msg_listview"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp200v"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp50"
+                android:layout_marginStart="@dimen/dp10"
+                android:layout_marginTop="50dp"
+                android:cacheColorHint="#00000000"
+                android:divider="#3c421b1b"
+                android:scrollbarStyle="outsideOverlay"
+                android:stackFromBottom="true"
+                android:transcriptMode="normal" />
+
+            <ImageView
+                android:id="@+id/danmu_control"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/dp6"
+                android:layout_marginRight="@dimen/dp6"
+                android:src="@mipmap/danmu_close" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/game_placeholder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/game_bg">
+
+            <ImageView
+                android:id="@+id/placeholder_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/placeholder_normal" />
+
+            <TextView
+                android:id="@+id/placeholder_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/placeholder_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Loading..."
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp16" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/game_control_playing"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_gravity="bottom"
+        android:visibility="invisible">
+
+        <FrameLayout
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal">
+
+            <ImageButton
+                android:id="@+id/opt_up"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal|top"
+                android:background="@android:color/transparent"
+                android:src="@drawable/button_opt_up" />
+
+            <ImageButton
+                android:id="@+id/opt_down"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal|bottom"
+                android:background="@android:color/transparent"
+                android:src="@drawable/button_opt_down" />
+
+            <ImageButton
+                android:id="@+id/opt_left"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_vertical|left"
+                android:background="@android:color/transparent"
+                android:src="@drawable/button_opt_left" />
+
+            <ImageButton
+                android:id="@+id/opt_right"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_vertical|right"
+                android:background="@android:color/transparent"
+                android:src="@drawable/button_opt_right" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/opt_catch"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/image_crawler_selector" />
+
+        <TextView
+            android:id="@+id/tint_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginRight="20dp"
+            android:gravity="right"
+            android:textColor="@android:color/white"
+            android:textSize="28sp" />
+    </FrameLayout>
+    <!--控制部分-->
+    <RelativeLayout
+        android:id="@+id/game_control_idle"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_gravity="bottom">
+
+        <TextView
+            android:id="@+id/game_control_start"
+            android:layout_width="160dp"
+            android:layout_height="55dp"
+            android:layout_centerInParent="true"
+            android:alpha="0.3"
+            android:background="@drawable/shape_corner_login"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="@string/start_game"
+            android:textColor="@android:color/white" />
+
+        <ImageButton
+            android:id="@+id/add_comment"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/icon_comment" />
+
+        <TextView
+            android:id="@+id/my_balance_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="30dp"
+            android:text="我的喵喵币："
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/sp10" />
+
+        <TextView
+            android:id="@+id/my_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/my_balance_title"
+            android:layout_marginRight="20dp"
+            android:gravity="right"
+            android:text="--"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/sp10" />
+
+        <RelativeLayout
+            android:id="@+id/show_change"
+            android:layout_width="@dimen/dp60"
+            android:layout_height="@dimen/dp45"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp60"
+            android:background="@mipmap/game_recharge">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp5"
+                android:gravity="center"
+                android:text="充币"
+                android:textSize="@dimen/sp11" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/comm_dialog_message"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="161dp"
+            android:layout_weight="1.0"
+            android:drawablePadding="@dimen/dp5"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/dp3"
+            android:paddingLeft="@dimen/dp20"
+            android:paddingRight="@dimen/dp20"
+            android:scrollbars="none"
+            android:textColor="@color/te_text_input_1"
+            android:textSize="@dimen/sp17" />
+    </RelativeLayout>
+    <!--切换摄像头-->
+    <ImageButton
+        android:id="@+id/game_camera_toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/dp160"
+        android:background="@android:color/transparent"
+        android:src="@mipmap/toggle_camera" />
+    <!--退出-->
+    <ImageButton
+        android:id="@+id/game_back"
+        android:layout_width="@dimen/dp40"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@color/translucent"
+        android:src="@mipmap/game_back" />
+
+
+    <!--左上角小像-->
+
+    <LinearLayout
+        android:id="@+id/game_guest_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp32"
+        android:layout_gravity="left|top"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp50"
+        android:background="@drawable/bg_game_user"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/dp15"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/current_up_user_iv"
+            android:layout_width="@dimen/dp32"
+            android:layout_height="@dimen/dp32"
+            android:background="@drawable/bg_avatar_small" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/current_up_user_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxWidth="@dimen/dp100"
+                android:text="nickname"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp13" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="游戏中"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp10" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <!--左上角小像-->
+    <!--<LinearLayout-->
+    <!--android:id="@+id/game_guest"-->
+    <!--android:layout_width="@dimen/dp100"-->
+    <!--android:layout_height="@dimen/dp135"-->
+    <!--android:layout_gravity="left|top"-->
+    <!--android:layout_marginLeft="@dimen/dp10"-->
+    <!--android:layout_marginTop="@dimen/dp50"-->
+    <!--android:background="@drawable/bg_game_view"-->
+    <!--android:orientation="vertical"-->
+    <!--android:visibility="invisible">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/current_up_user"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/dp20"-->
+    <!--android:background="@drawable/bg_game_view"-->
+    <!--android:gravity="center"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="12sp" />-->
+
+    <!--<com.tencent.ilivesdk.view.ILiveRootView-->
+    <!--android:id="@+id/game_guest_view"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/dp110"-->
+    <!--android:visibility="invisible" />-->
+
+    <!--</LinearLayout>-->
+
+</FrameLayout>

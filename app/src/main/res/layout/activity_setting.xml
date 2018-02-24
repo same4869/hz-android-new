@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.renren.wawa.view.CommTitleBarView
+        android:id="@+id/title_bar"
+        style="@style/CommTitleBarViewStyle"
+        app:titleText="@string/settings" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:orientation="vertical">
+
+                <com.renren.wawa.view.CommFuctionEntryBar
+                    android:id="@+id/settings_background_music"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp48"
+                    android:clickable="true"
+                    app:fuctionPaddingLeft="0dp"
+                    app:fuctionShowTopLine="false"
+                    app:fuctionSwitch="true"
+                    app:fuctionTitle="@string/settings_background_music" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/seperator" />
+
+                <com.renren.wawa.view.CommFuctionEntryBar
+                    android:id="@+id/settings_sound_effect"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp48"
+                    android:clickable="true"
+                    app:fuctionPaddingLeft="0dp"
+                    app:fuctionShowTopLine="true"
+                    app:fuctionSwitch="true"
+                    app:fuctionTitle="@string/settings_sound_effect" />
+
+            </LinearLayout>
+
+
+            <com.renren.wawa.view.CommFuctionEntryBar
+                android:id="@+id/settings_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp48"
+                android:layout_marginTop="@dimen/dp20"
+                android:clickable="true"
+                app:fuctionPaddingLeft="0dp"
+                app:fuctionShowArrow="false"
+                app:fuctionShowTopLine="false"
+                app:fuctionSwitch="false"
+                app:fuctionTitle="@string/settings_feedback" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/seperator" />
+
+            <com.renren.wawa.view.CommFuctionEntryBar
+                android:id="@+id/settings_about"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp48"
+                android:clickable="true"
+                app:fuctionPaddingLeft="0dp"
+                app:fuctionShowArrow="false"
+                app:fuctionShowTopLine="true"
+                app:fuctionSwitch="false"
+                app:fuctionTitle="@string/settings_about" />
+
+            <com.renren.wawa.view.CommFuctionEntryBar
+                android:id="@+id/settings_exchange_service"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp48"
+                android:clickable="true"
+                android:visibility="gone"
+                app:fuctionPaddingLeft="0dp"
+                app:fuctionShowArrow="false"
+                app:fuctionShowTopLine="true"
+                app:fuctionSwitch="false"
+                app:fuctionTitle="@string/settings_exchange_service" />
+
+
+            <com.renren.wawa.view.CommFuctionEntryBar
+                android:id="@+id/settings_logout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp48"
+                android:layout_marginTop="@dimen/dp20"
+                android:clickable="true"
+                app:fuctionPaddingLeft="0dp"
+                app:fuctionShowArrow="false"
+                app:fuctionShowTopLine="false"
+                app:fuctionSwitch="false"
+                app:fuctionTitle="@string/settings_logout"
+                app:fuctionTitleCenter="true" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

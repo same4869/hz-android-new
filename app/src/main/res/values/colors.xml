@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#ffeb00</color>
+
+    <color name="themeColor">#FD95BB</color>
+    <color name="hint">#EBEBEB</color>
+    <color name="mask_white">#80FFFFFF</color>
+    <color name="border">#C8C8C8</color>
+    <color name="gray">#C8C8C8</color>
+    <color name="seperator">#EAEAEA</color>
+
+    <color name="app_grey_transparent">#80999999</color>
+    <color name="black_transluent">#bb000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="translucent">#0000</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="black_translucent">#bb000000</color>
+    <color name="black_translucent20">#33000000</color>
+    <color name="black_translucent50">#7B000000</color>
+    <color name="black_translucent70">#B3000000</color>
+    <color name="black_translucent80">#BB000000</color>
+    <color name="white_translucent50">#7Bffffff</color>
+    <color name="white_translucent90">#E6ffffff</color>
+    <color name="white_translucent10">#1Affffff</color>
+    <color name="white_translucent60">#99ffffff</color>
+    <color name="white_translucent70">#b3ffffff</color>
+    <color name="theme_translucent20">#3333bbff</color>
+
+    <!--start 主题- background-->
+    <color name="theme_color_1">#2391FE</color> <!-- 主题颜色 -->
+    <!--end 主题- background-->
+
+
+    <!--start 背景- background-->
+    <color name="view_bg_1">#F5F5F9</color> <!-- 界面－背景颜色－背景底色 -->
+    <color name="view_bg_11">#F0F0F0</color> <!-- 界面－背景颜色－背景底色 -->
+    <color name="view_bg_2">#2391FE</color> <!-- 界面－背景颜色－导航底色 -->
+    <color name="view_bg_3">#FF8664</color> <!-- 界面－背景颜色－辅助颜色 : 错误，删除，小红点，警示-->
+    <color name="view_bg_4">#FAFBFC</color> <!-- 界面－背景颜色－底部tab底色 : 底部题目切换背景色 -->
+    <color name="view_bg_5">#cc0D1F2A</color> <!-- 遮罩的背景色-->
+    <color name="view_bg_8">#FF5533</color> <!-- 辅助颜色 -->
+    <color name="view_bg_line_1">#DDE4E7</color><!-- nav分割线1 -->
+    <color name="game_bg">#94E8FF</color>
+    <color name="image_bg">#D9D9D9</color>
+    <!--end 背景- background-->
+
+    <!--start 标签- TextView-->
+    <color name="te_text_segment_1">#0D1F2A</color> <!-- 标签－文字颜色－正文1 :深	标题加粗，正文常规-->
+    <color name="te_text_segment_2">#5D6984</color> <!-- 标签－文字颜色－正文2 :略深	副标题，次级文字-->
+    <color name="te_text_segment_3">#9BA4B7</color> <!-- 标签－文字颜色－正文3 :浅	辅助文字，不可用文字-->
+    <color name="te_text_segment_4">#DEEBFF</color> <!-- 标签－文字颜色－浅色 提示toast颜色-->
+    <color name="te_text_hint">#2391FE</color> <!-- 标签－文字颜色－提示 :正确文字，链接文字正常-->
+    <color name="te_bg_input_1">#F9F9F9</color> <!-- 背景－输入框1背景 -->
+    <!--end 标签- TextView-->
+
+    <!--start 标签- Button-->
+    <color name="button_text_normal_1">#FFFFFF</color> <!-- 按钮－文字颜色－按钮－正常1 -->
+    <color name="button_text_normal_2">#2391FE</color> <!-- 按钮－文字颜色－按钮－正常2 -->
+    <color name="button_text_normal_3">#FF8664</color> <!-- 按钮－文字颜色－按钮－正常3 :警示按钮-->
+
+    <color name="button_bg_normal_1">#2391FE</color> <!-- 按钮－背景颜色－正常1-->
+    <color name="button_bg_normal_2">#FFFFFF</color> <!-- 按钮－背景颜色－正常2-->
+    <color name="button_bg_normal_3">#FFFBF9</color> <!-- 按钮－背景颜色－正常3 : 警示按钮背景色-->
+    <color name="button_bg_selected_1">#2593FF</color> <!-- 按钮－背景颜色－pressed1-->
+    <color name="button_bg_selected_2">#006CD4</color> <!-- 按钮－背景颜色－pressed2-->
+    <color name="button_bg_selected_3">#EAF5FF</color> <!-- 按钮－背景颜色－pressed3-->
+    <color name="button_bg_disabled_1">#EFF3F8</color> <!-- 按钮－背景颜色－disabled1-->
+    <!--end 标签- Button-->
+
+    <!--start 列表- ListView-->
+    <color name="listview_line_1">#DDE4E7</color> <!-- 列表－分割线－1 ：层级分割线-->
+    <color name="listview_line_2">#CFD9E0</color> <!-- 列表－分割线－2 ：底部tab分割线-->
+    <color name="listview_item_bg_1">#F9FBFB</color> <!-- 列表－item背景颜色－1-->
+    <color name="listview_item_bg_2">#EFF5F8</color> <!-- 列表－item背景颜色－2 -->
+    <!--end 列表- ListView-->
+
+
+    <color name="font_title">#4c4c4c</color>
+    <color name="font_content">#999999</color>
+    <color name="font_content_cccccc">#cccccc</color>
+    <color name="font_login_forget">#99ddff</color>
+
+
+    <!--start 标签- TextView-->
+    <!--<color name="te_text_segment_4">#3C484E</color> &lt;!&ndash; 标签－文字颜色－正文4 &ndash;&gt;-->
+    <color name="te_text_hint_pressed">#0066CB</color> <!-- 标签－文字颜色按压状态－提示 -->
+    <color name="te_text_input_1">#0D1F2A</color> <!-- 标签－输入框1正文1 -->
+    <color name="te_text_input_2">#9A9FAA</color> <!-- 标签－输入框1正文2 -->
+    <color name="te_text_input_2_error">#FF5757</color> <!-- 标签－输入框1正文2错误状态 -->
+    <color name="te_text_input_3">#5B1212</color> <!-- 标签－输入框1正文3 -->
+    <color name="te_text_input_4">#A0732A</color> <!-- 标签－输入框1正文4 -->
+
+    <color name="te_bg_input_1_error">#FFF7F7</color> <!-- 背景－输入框1背景错误状态 -->
+    <color name="te_bg_input_1_line">#979797</color> <!-- 背景－输入框1背景描线 -->
+    <color name="te_bg_input_1_line_error">#FF5757</color> <!-- 背景－输入框1背景描线错误状态 -->
+    <color name="te_bg_input_2">#FFFDEF</color> <!-- 背景－输入框2背景 -->
+    <color name="te_bg_input_2_line">#EAD3AE</color> <!-- 背景－输入框2背景描线 -->
+    <color name="te_bg_input_3">#FAFBFC</color> <!-- 背景－输入框3背景 -->
+    <color name="te_bg_input_3_line">#D8D8D8</color> <!-- 背景－输入框3背景描线 -->
+    <!--end 标签- TextView-->
+
+    <!--start 用到的颜色,等ui色值代号-->
+    <!--<color name="theme">#2C97FF</color>-->
+    <color name="title_bar_color">#2C97FF</color>
+    <color name="_95CAFF">#95CAFF</color>
+    <color name="view_border_4">#7DD852</color> <!-- 界面－边框颜色－颜色3 -->
+    <color name="view_bg_9">#4683e7</color> <!-- 界面－背景颜色－辅助颜色 -->
+    <color name="te_text_assis_3">#A5ACB1</color> <!-- 标签－文字颜色－辅助文字3 -->
+    <color name="te_text_section_1">#3D4851</color> <!-- 标签－文字颜色－大段文字1 -->
+    <color name="comm_bg_color">#f8f8f8</color>
+    <color name="item_bg_normal_1">#EFF5F8</color> <!-- 列表格－背景颜色－1 -->
+    <color name="item_bg_normal_2">#F9FBFB</color> <!-- 列表格－背景颜色－1 -->
+    <color name="text_gray_1">#3d3d3d</color>
+    <color name="text_gray_2">#6a6a6a</color>
+    <color name="text_gray_3">#888888</color>
+    <color name="comm_line_color">#BEBEBE</color>
+    <color name="black2">#7c7c7c</color>
+    <color name="view_bg_7">#FFFAF7</color>
+    <!--end 用到的颜色,等ui色值代号-->
+
+    <color name="item_bg_hover">#F1FAFF</color> <!-- 高亮1 -->
+    <color name="item_bg_light_1">#F8F8F8</color> <!-- 选中1 -->
+    <color name="comm_transparent">#00000000</color> <!-- 透明色 -->
+    <color name="black_transparent70">#b2000000</color> <!-- 透明色70% -->
+    <color name="te_text_note_1">#ACACAC</color> <!-- 注释1 -->
+
+    <color name="te_text_title_1">#A1ADBA</color>
+    <color name="te_text_nav">#8C8C8C</color>
+
+    <!--tab标签栏文字的颜色-->
+    <color name="colorTabText">#585858</color>
+
+    <color name="bottom_time_color">#9B9B9B</color>
+    <color name="text_green">#00bb00</color>
+
+
+    <color name="login_bg_yellow">#ffeb00</color>
+    <color name="login_terms_and_policy">#b5b5b5</color>
+    <color name="login_bg">#eaeaea</color>
+
+    <color name="appeal_reason_color">#9B9B9B</color>
+
+    <color name="colorSendName">#9966cc</color>
+    <color name="colorSendName1">#FF3163</color>
+    <color name="colorSendName2">#973365</color>
+    <color name="colorSendName3">#006599</color>
+    <color name="colorSendName4">#D07E44</color>
+    <color name="colorSendName5">#97BC87</color>
+    <color name="colorSendName6">#FFAE1F</color>
+    <color name="colorSendName7">#FF437D</color>
+
+    <color name="color_text">#4F4F4F</color>
+</resources>

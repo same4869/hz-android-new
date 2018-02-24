@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/skin_view_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.renren.wawa.view.CommTitleBarView
+        android:id="@+id/title_bar"
+        style="@style/CommTitleBarViewStyle" />
+
+    <RelativeLayout
+        android:id="@+id/webview_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_bar" />
+
+
+    <com.renren.wawa.view.CommBeatLoadingView
+        android:id="@+id/opinion_callback_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

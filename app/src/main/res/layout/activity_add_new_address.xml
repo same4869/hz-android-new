@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_bg_1"
+    android:orientation="vertical">
+
+    <com.renren.wawa.view.CommTitleBarView
+        android:id="@+id/title_bar"
+        style="@style/CommTitleBarViewStyle"
+        app:menuText="@string/save"
+        app:titleText="@string/new_address" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:orientation="vertical">
+
+        <!--联系人-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp20"
+            android:paddingRight="@dimen/dp20">
+
+            <TextView
+                android:layout_width="@dimen/dp70"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/user_name"
+                android:textColor="#4A4A4A"
+                android:textSize="@dimen/sp14" />
+
+            <EditText
+                android:id="@+id/user_name_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:textColor="#4A4A4A"
+                android:textSize="@dimen/sp16" />
+
+        </LinearLayout>
+
+        <!--电话-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp20"
+            android:paddingRight="@dimen/dp20">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentTop="true"
+                android:background="@color/seperator" />
+
+            <TextView
+                android:id="@+id/user_phone_txt"
+                android:layout_width="@dimen/dp70"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/user_phone"
+                android:textColor="#4A4A4A"
+                android:textSize="@dimen/sp14" />
+
+            <EditText
+                android:id="@+id/user_phone_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/user_phone_txt"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:inputType="phone"
+                android:textColor="#4A4A4A"
+                android:textSize="@dimen/sp16" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginStart="@dimen/dp20"
+        android:background="@color/seperator" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--所在地区-->
+            <LinearLayout
+                android:id="@+id/user_district_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp20"
+                android:paddingRight="@dimen/dp20">
+
+                <TextView
+                    android:layout_width="@dimen/dp70"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/user_district"
+                    android:textColor="#4A4A4A"
+                    android:textSize="@dimen/sp14" />
+
+                <TextView
+                    android:id="@+id/user_province"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="#4A4A4A"
+                    android:textSize="@dimen/sp16" />
+
+                <TextView
+                    android:id="@+id/user_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="#4A4A4A"
+                    android:textSize="@dimen/sp16" />
+
+
+                <TextView
+                    android:id="@+id/user_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="#4A4A4A"
+                    android:textSize="@dimen/sp16" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dp16"
+                android:src="@mipmap/comm_icon_arrow" />
+        </RelativeLayout>
+
+        <!--详细地址-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp130"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp20"
+            android:paddingRight="@dimen/dp20">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentTop="true"
+                android:background="@color/seperator" />
+
+            <TextView
+                android:id="@+id/user_detailed_address_txt"
+                android:layout_width="@dimen/dp70"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp15"
+                android:text="@string/user_detailed_address"
+                android:textColor="#4A4A4A"
+                android:textSize="@dimen/sp14" />
+
+            <EditText
+                android:id="@+id/user_detailed_address_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/user_detailed_address_txt"
+                android:background="@null"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

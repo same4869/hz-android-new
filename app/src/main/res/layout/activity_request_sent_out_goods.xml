@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_bg_1"
+    android:orientation="vertical">
+
+    <com.renren.wawa.view.CommTitleBarView
+        android:id="@+id/title_bar"
+        style="@style/CommTitleBarViewStyle"
+        app:titleText="@string/request_shipping" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/dp10">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/productor_order_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_border_view" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:background="@drawable/bg_border_view"
+                    android:orientation="vertical">
+                    <!--邮箱地址-->
+                    <RelativeLayout
+                        android:id="@+id/user_address_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp60"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/dp20"
+                        android:paddingRight="@dimen/dp20">
+
+                        <TextView
+                            android:id="@+id/user_nickname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/sp14" />
+
+                        <TextView
+                            android:id="@+id/user_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:layout_toRightOf="@+id/user_nickname"
+                            android:gravity="center_vertical"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/sp14" />
+
+
+                        <TextView
+                            android:id="@+id/user_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/user_nickname"
+                            android:layout_marginTop="@dimen/dp5"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp12" />
+
+                        <TextView
+                            android:id="@+id/modify_address_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dp30"
+                            android:layout_alignParentRight="true"
+                            android:background="@mipmap/green_button_bg"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/dp10"
+                            android:paddingRight="@dimen/dp10"
+                            android:text="@string/modify_address"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp14" />
+
+                    </RelativeLayout>
+
+                    <!--新增邮件地址-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp50"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/dp20"
+                        android:paddingRight="@dimen/dp20">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentTop="true"
+                            android:background="@color/seperator" />
+
+                        <TextView
+                            android:id="@+id/add_user_address_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:gravity="center_vertical"
+                            android:text="@string/add_send_out_address"
+                            android:textColor="#4A4A4A"
+                            android:textSize="@dimen/sp16" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--添加备注-->
+                <RelativeLayout
+                    android:id="@+id/add_remarks_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp60"
+                    android:layout_marginBottom="@dimen/dp20"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:background="@drawable/bg_border_view"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp20"
+                    android:paddingRight="@dimen/dp20">
+
+                    <TextView
+                        android:id="@+id/add_remarks_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_vertical"
+                        android:text="@string/add_remarks"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp16" />
+
+
+                    <TextView
+                        android:id="@+id/remarks_tips_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="@string/remarks"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/sp16"
+                        android:visibility="gone" />
+
+
+                    <TextView
+                        android:id="@+id/remarks_context_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/remarks_tips_txt"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/sp12"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_border_view"
+                    android:orientation="vertical">
+                    <!--邮费-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp50"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/dp20"
+                        android:paddingRight="@dimen/dp20">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="@string/postage"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp12" />
+
+                        <TextView
+                            android:id="@+id/postage_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp16" />
+
+                    </RelativeLayout>
+
+                    <!--当前我的喵喵币-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp50"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/dp20"
+                        android:paddingRight="@dimen/dp20">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentTop="true"
+                            android:background="@color/seperator" />
+
+                        <TextView
+                            android:id="@+id/current_wawa_coin_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp12" />
+
+                        <TextView
+                            android:id="@+id/pay_and_shipping_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dp30"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@mipmap/green_button_bg"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/dp10"
+                            android:paddingRight="@dimen/dp10"
+                            android:text="@string/pay_and_shipping"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp14" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

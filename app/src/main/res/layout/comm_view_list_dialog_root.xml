@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_bg_1"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/comm_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:background="@drawable/comm_list_item_selected"
+        android:gravity="center"
+        android:textColor="@color/te_text_segment_1"
+        android:textSize="@dimen/sp16" />
+
+    <ListView
+        android:id="@+id/comm_lv_list_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/transparent"
+        android:listSelector="@color/transparent" >
+    </ListView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/listview_line_1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/dp10v"
+        android:background="@color/listview_line_1" />
+
+    <TextView
+        android:id="@+id/comm_lv_list_dialog_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:background="@drawable/comm_list_item_selected"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/te_text_segment_1"
+        android:textSize="@dimen/sp16" />
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff000000">
+
+    <VideoView
+        android:id="@+id/scratch_video_video_play"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+
+    <com.renren.wawa.view.CommTitleBarView
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff000000" />
+
+    <com.renren.wawa.view.CommBeatLoadingView
+        android:id="@+id/scratch_video_loading_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <!-- 底部控制栏 -->
+
+    <LinearLayout
+        android:id="@+id/scratch_video_ll_bottom_ctrl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp44"
+        android:layout_alignParentBottom="true"
+        android:background="@color/themeColor"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp10">
+
+        <ImageButton
+            android:id="@+id/scratch_video_btn_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@mipmap/guwen_audio_video_play" />
+
+        <SeekBar
+            android:id="@+id/scratch_video_sb_video"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxHeight="@dimen/dp3"
+            android:minHeight="@dimen/dp3"
+            android:paddingLeft="@dimen/dp15"
+            android:paddingRight="@dimen/dp15"
+            android:progress="0"
+            android:progressDrawable="@drawable/guwen_audio_video_progress"
+            android:thumb="@mipmap/guwen_audio_video_thumb" />
+
+        <TextView
+            android:id="@+id/scratch_video_tv_play_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0:00/1:00"
+            android:textColor="@color/te_text_hint"
+            android:textSize="@dimen/sp12" />
+
+    </LinearLayout>
+
+</RelativeLayout>

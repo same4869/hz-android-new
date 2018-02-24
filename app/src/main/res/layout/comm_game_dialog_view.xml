@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/comm_dialog_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/comm_dialog_content"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp300"
+        android:layout_gravity="center"
+        android:background="@mipmap/game_fail_dialog_bg"
+        android:clickable="true"
+        android:minHeight="@dimen/dp200"
+        android:minWidth="@dimen/dp300"
+       >
+
+        <LinearLayout
+            android:id="@+id/message_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="@dimen/dp40"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/comm_dialog_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dp20"
+                android:paddingRight="@dimen/dp20"
+                android:textColor="@color/te_text_segment_1"
+                android:textSize="@dimen/sp20" />
+
+            <TextView
+                android:id="@+id/comm_dialog_message"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_weight="1.0"
+                android:drawablePadding="@dimen/dp5"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:lineSpacingExtra="@dimen/dp3"
+                android:paddingLeft="@dimen/dp20"
+                android:paddingRight="@dimen/dp20"
+                android:scrollbars="none"
+                android:textColor="@color/te_text_input_1"
+                android:textSize="@dimen/sp17" />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/comm_buttons_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dp20"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/comm_dialog_left_btn"
+                android:layout_width="wrap_content"
+                android:paddingLeft="@dimen/dp20"
+                android:paddingRight="@dimen/dp20"
+                android:layout_weight="1"
+                android:layout_height="@dimen/dp35"
+                android:gravity="center"
+                android:background="@drawable/bg_corners_btn_theme"
+                android:text="取消"
+                android:textSize="@dimen/sp16" />
+
+            <Button
+                android:id="@+id/comm_dialog_right_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp35"
+                android:paddingLeft="@dimen/dp20"
+                android:paddingRight="@dimen/dp20"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/bg_corners_btn_theme"
+                android:layout_marginLeft="@dimen/dp20"
+                android:text="确定"
+                android:textSize="@dimen/sp16" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

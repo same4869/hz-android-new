@@ -1,0 +1,76 @@
+syntax = "proto3";
+
+package game.protobuf;
+
+enum MsgType {
+    //      AUTH = 0;
+    //      PING = 1;
+    //      PONG = 2;
+    //      RESPONSE = 3;
+    //      QUIT = 4;
+    //      STOP = 5;
+    //      CONTROL = 6;
+    //      STATE = 7;
+    //      NEXT = 8;
+    CONNECT = 0;
+    PING = 1;
+    PONG = 2;
+    RET = 3;
+    DISCONNECT = 4;
+    STOP = 5;
+    OPERATION = 6;
+    STATUS = 7;
+    ANOTHER = 8;
+};
+
+// response: 0 上机成功 1 auth 失败 2 上机失败
+message Connect {
+    uint64 uid = 1;
+    string token = 2;
+    uint32 roomId = 3; // game_server 需要传递 room_id 来上机
+};
+
+// 继续上机
+message Another {
+    uint64 uid = 1;
+    string token = 2;
+    uint32 roomId = 3; // game_server 需要传递 room_id 来上机
+};
+
+message Ping {
+    uint64 uid = 1;
+};
+
+message Pong {
+    uint64 uid = 1;
+};
+
+message Ret {
+    uint32 originMsgType = 1; // 表明该应答针对的消息类型
+    uint32 code = 2; // 应答的状态码 0 正常，其他值表示异常
+    string msg = 3; // 出现异常时候的应答原因
+    string data = 4; // 正常响应时的应答
+};
+
+// 断开连接
+message Disconnect {
+    uint64 uid = 1;
+};
+
+// 停止游戏
+message Stop {
+    uint64 uid = 1;
+};
+
+// 控制控制
+message Operation {
+    uint64 uid = 1;
+    uint32 cmd = 2; // 0 下爪 1 前-开始 2 前-结束 3 后-开始 4 后-结束 5 左-开始 6 左-结束 7 右-开始 8 右-结束
+}
+
+// 游戏状态
+message Status {
+    uint32 state = 1; //0 抓到娃娃 1 没有抓到娃娃 2 故障   3 下抓 4 游戏中
+    uint32 timeUsed = 2; // 已用时间, 单位毫秒
+    uint32 timeRemain = 3; // 剩余时间, 单位毫秒
+}

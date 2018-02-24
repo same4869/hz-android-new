@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/listview_line_1" />
+
+    <TextView
+        android:id="@+id/comm_tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:background="@drawable/comm_list_item_selected"
+        android:gravity="center"
+        android:textColor="#666666"
+        android:textSize="@dimen/sp16" />
+
+</LinearLayout>

@@ -1,0 +1,175 @@
+syntax = "proto3";
+
+package room.protobuf;
+
+//option csharp_namespace = "Google.Protobuf.Room";
+//option java_package = "com.seeplant.protobuf";
+//option java_outer_classname = "ProtoMsg";
+//option java_multiple_files = true;
+//option java_generate_equals_and_hash = true;
+//option objc_class_prefix = "GPB";
+//新定义接口的时候，先新建立一个message，然后在Protocol中添加这个message的实例
+
+// 封装所有消息的对象，所有收发对象基于Protocol对象封装，用Protocol
+// 对象的hasXxx()方法来强转对象
+// Protocol protocol;
+// if (protocol.hasPing()) {
+//    Ping ping = protocol.getPing(); 
+// }
+message Protocol {
+//  Auth auth = 1;
+//  Ping ping = 2;
+//  Pong pong = 3;
+//  Notice notice = 4;
+//  Response response = 5;
+//  UserJoin userJoin = 6;
+//  UserLeft userLeft = 7;
+//  Cheers cheers = 8;
+//  RoomStatus roomStatus = 9;
+Connect connect = 1;
+Ping ping = 2;
+Notice notice = 3;
+Ack ack = 4;
+Join join = 5;
+Left left = 6;
+GoodJob goodJob = 7;
+RoomStatus roomStatus = 8;
+RoomEndLess roomEndLess = 9;
+};
+
+enum MsgType{
+//  AUTH = 0;
+//  PING = 1;
+//  PONG = 2;
+//  NOTICE = 3;
+//  RESPONSE = 4;
+//  USERJOIN = 5;
+//  USERLEFT = 6;
+//  CHEERS = 7;
+//  ROOMSTATUS = 8;
+CONNECT = 0;
+PING = 1;
+NOTICE = 2;
+ACK = 3;
+JOIN = 4;
+LEFT = 5;
+GOODJOB = 6;
+ROOMSTATUS = 7;
+ROOMENDLESS = 8;
+};
+
+//message Auth {
+//  uint32 msgType = 1;
+//  int64 uid = 2;
+//  string token = 3;
+//};
+
+message Connect {
+  int64 uid = 1;
+  string token = 2;
+};
+
+//message Ping {
+//  uint32 msgType = 1;
+//  int64 uid = 2;
+//};
+
+message Ping {
+  int64 uid = 1;
+};
+
+//// 针对Ping的应答是特殊类型
+//message Pong {
+//  uint32 msgType = 1;
+//  int64 uid = 2;
+//};
+
+//message Notice {
+//  uint32 msgType = 1;
+//  int64 uid = 2;
+//  string data = 3; // redis事件
+//};
+
+message Notice {
+  int64 uid = 1;
+  string msg = 2;
+};
+
+//message Response {
+//  uint32 msgType = 1;
+//  uint32 originMsgType = 2; // 表明该应答针对的消息类型
+//  int64 uid = 3;
+//  uint32 responseCode = 4; // 应答的状态码 0 正常，其他值表示异常
+//  string cause = 5; // 出现异常时候的应答原因
+//};
+
+message Ack {
+  MsgType originalType = 1; // 表明该应答针对的消息类型
+  int64 uid = 2;
+  uint32 responseCode = 3; // 应答的状态码 0 正常，其他值表示异常
+  string cause = 4; // 出现异常时候的应答原因
+};
+
+//用户加入 app->roomServer
+//message UserJoin {
+//  uint32 msgType = 1;
+//  int64 roomId = 2;
+//  int64 uid = 3;
+//  string nickname = 4;
+//  string avatar = 5;
+//};
+message Join {
+  int64 roomId = 1;
+  int64 uid = 2;
+  string uname = 3;
+  string uimg = 4;
+};
+
+
+//用户退出 app->roomServer
+//message UserLeft {
+//  uint32 msgType = 1;
+//  int64 roomId = 2;
+//  int64 uid = 3;
+//  string nickname = 4;
+//  string avatar = 5;
+//};
+message Left {
+  int64 roomId = 1;
+  int64 uid = 2;
+  string uname = 3;
+  string uimg = 4;
+};
+
+//夹住娃娃 roomServer->app
+//message Cheers {
+//    uint32 msgType = 1;
+//    int64 uid = 2;
+//    int64 roomId = 3;
+//    string nickname = 4;
+//    string avatar = 5;
+//};
+message GoodJob {
+  int64 uid = 1;
+  int64 roomId = 2;
+  string uname = 3;
+  string uimg = 4;
+};
+
+//房间状态通知 roomServer->app
+//message RoomStatus {
+//    uint32 msgType = 1;
+//    int64 roomId = 2;
+//    uint32 status = 3;
+//};
+message RoomStatus {
+  int64 roomId = 1;
+  uint32 status = 2;
+};
+
+//房间无限模式通知 roomServer->app
+message RoomEndLess {
+  int64 roomId = 1;
+  uint32 status = 2;
+  uint32 price = 3;
+};
