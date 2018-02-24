@@ -7,7 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.renren.wawa.R;
+import com.wawaji.vip.R;
 import com.renren.wawa.adapter.GameWaWaDetailAdapter;
 import com.renren.wawa.adapter.ListInviteAdapter;
 import com.renren.wawa.config.Constants;

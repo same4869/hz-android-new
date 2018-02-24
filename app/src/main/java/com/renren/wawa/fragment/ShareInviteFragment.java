@@ -4,7 +4,7 @@ import android.net.Uri;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.renren.wawa.R;
+import com.wawaji.vip.R;
 import com.renren.wawa.app.WawaApplication;
 import com.renren.wawa.config.Constants;
 import com.renren.wawa.model.ShareContentText;

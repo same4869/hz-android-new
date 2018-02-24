@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.EditText;
 
-import com.renren.wawa.R;
+import com.wawaji.vip.R;
 import com.renren.wawa.base.BaseTitleBarActivity;
 import com.renren.wawa.utils.StringUtil;
 

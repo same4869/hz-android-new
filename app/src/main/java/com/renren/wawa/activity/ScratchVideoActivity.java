@@ -25,7 +25,7 @@ import android.widget.VideoView;
 
 import com.nineoldandroids.view.ViewHelper;
 import com.nineoldandroids.view.ViewPropertyAnimator;
-import com.renren.wawa.R;
+import com.wawaji.vip.R;
 import com.renren.wawa.base.BaseTitleBarActivity;
 import com.renren.wawa.utils.AppUtil;
 import com.renren.wawa.utils.BBLog;

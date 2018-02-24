@@ -11,7 +11,7 @@ import android.view.View;
 import android.widget.RelativeLayout;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
-import com.renren.wawa.R;
+import com.wawaji.vip.R;
 import com.renren.wawa.activity.CommWebActivity;
 import com.renren.wawa.activity.GameRoomActivity;
 import com.renren.wawa.adapter.HomeCardNewAdapter;

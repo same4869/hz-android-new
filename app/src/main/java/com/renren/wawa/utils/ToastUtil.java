@@ -11,7 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.renren.wawa.R;
+import com.wawaji.vip.R;
 import com.renren.wawa.app.WawaApplication;
 import com.squareup.picasso.Picasso;
 

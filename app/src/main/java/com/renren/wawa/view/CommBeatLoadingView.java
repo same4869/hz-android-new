@@ -10,7 +10,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.renren.wawa.R;
+import com.wawaji.vip.R;
 import com.renren.wawa.utils.BBLog;
 
 public class CommBeatLoadingView extends FrameLayout implements View.OnClickListener {

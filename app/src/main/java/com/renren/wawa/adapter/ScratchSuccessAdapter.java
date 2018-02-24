@@ -7,7 +7,7 @@ import android.widget.ImageView;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
-import com.renren.wawa.R;
+import com.wawaji.vip.R;
 import com.renren.wawa.activity.GameDetailActivity;
 import com.renren.wawa.activity.ScratchVideoActivity;
 import com.renren.wawa.model.UserGameBean;

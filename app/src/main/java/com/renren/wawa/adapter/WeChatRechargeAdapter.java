@@ -7,7 +7,7 @@ import android.view.View;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
-import com.renren.wawa.R;
+import com.wawaji.vip.R;
 import com.renren.wawa.model.PaySettingBean;
 
 import java.util.List;
@@ -29,13 +29,17 @@ public class WeChatRechargeAdapter extends BaseQuickAdapter<PaySettingBean.DataB
     protected void convert(final BaseViewHolder baseViewHolder, final PaySettingBean.DataBean weixinBean) {
         baseViewHolder.setText(R.id.money_txt, "￥" + weixinBean.getPrice() / 100.0 + "0");
         baseViewHolder.setText(R.id.holl_money_txt, weixinBean.getOriginal_coin() + "");
-        baseViewHolder.setText(R.id.holl_money_txt_tip, "+" + weixinBean.getPlus_coin());
-        if (!TextUtils.isEmpty(weixinBean.getText())) {
-            baseViewHolder.setText(R.id.holl_money_detail, weixinBean.getText());
-            baseViewHolder.getView(R.id.holl_money_detail).setVisibility(View.VISIBLE);
+        if (weixinBean.getIs_first() == 1) {
+            baseViewHolder.setText(R.id.holl_money_txt_tip, "送" + weixinBean.getPlus_coin() + "币(限首充)");
         } else {
-            baseViewHolder.getView(R.id.holl_money_detail).setVisibility(View.GONE);
+            baseViewHolder.setText(R.id.holl_money_txt_tip, "送" + weixinBean.getPlus_coin() + "币");
         }
+//        if (!TextUtils.isEmpty(weixinBean.getText())) {
+//            baseViewHolder.setText(R.id.holl_money_detail, weixinBean.getText());
+//            baseViewHolder.getView(R.id.holl_money_detail).setVisibility(View.VISIBLE);
+//        } else {
+//            baseViewHolder.getView(R.id.holl_money_detail).setVisibility(View.GONE);
+//        }
 //        if(baseViewHolder.getLayoutPosition() == curSelectPay){
 //            baseViewHolder.setTextColor(R.id.money_txt, Color.parseColor("#77FFFFFF"));
 //        }else{

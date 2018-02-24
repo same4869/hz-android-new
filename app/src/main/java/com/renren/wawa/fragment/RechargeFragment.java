@@ -1,12 +1,13 @@
 package com.renren.wawa.fragment;
 
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.renren.wawa.R;
+import com.wawaji.vip.R;
 import com.renren.wawa.adapter.WeChatRechargeAdapter;
 import com.renren.wawa.app.WawaApplication;
 import com.renren.wawa.config.Constants;
@@ -65,7 +66,7 @@ public class RechargeFragment extends BaseFragment implements WeChatRechargeAdap
 
     @Override
     public void initViews() {
-        rechargeRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        rechargeRecyclerView.setLayoutManager(new GridLayoutManager(getActivity(), 3));
         rechargeRecyclerView.setNestedScrollingEnabled(false);
     }
 
@@ -158,7 +159,7 @@ public class RechargeFragment extends BaseFragment implements WeChatRechargeAdap
     @Override
     public void onItemClickListener(PaySettingBean.DataBean weixinBean, View view, int position) {
 //        curSelectPay = position;
-        if(WawaApplication.getInstance().getmWxApi().isWXAppInstalled()) {
+        if (WawaApplication.getInstance().getmWxApi().isWXAppInstalled()) {
             HttpMethods.getInstance().getPayWeiXin(new Subscriber<PayWeiXinBean>() {
                 @Override
                 public void onCompleted() {
@@ -185,7 +186,7 @@ public class RechargeFragment extends BaseFragment implements WeChatRechargeAdap
                     WawaApplication.getInstance().getmWxApi().sendReq(req);
                 }
             }, weixinBean.getPrice());
-        }else{
+        } else {
             ToastUtil.showToast("您还未安装微信客户端");
         }
     }

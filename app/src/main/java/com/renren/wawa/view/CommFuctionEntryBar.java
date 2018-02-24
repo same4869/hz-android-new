@@ -11,7 +11,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.renren.wawa.R;
+import com.wawaji.vip.R;
 
 public class CommFuctionEntryBar extends RelativeLayout implements View.OnClickListener {
 

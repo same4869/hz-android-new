@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
-import com.renren.wawa.R;
+import com.wawaji.vip.R;
 import com.renren.wawa.adapter.ScratchRecordAdapter;
 import com.renren.wawa.base.BaseTitleBarActivity;
 import com.renren.wawa.model.UserGameBean;

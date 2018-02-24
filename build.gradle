@@ -27,11 +27,11 @@ task clean(type: Delete) {
 }
 
 project.ext {
-    applicationId = "com.renren.wawa"
+    applicationId = "com.wawaji.vip"
     buildToolsVersion = "26.0.1" 
     compileSdkVersion = 26
     targetSdkVersion = 22
     minSdkVersion = 17
-    versionCode = 1000008
-    versionName = "1.0.8"
+    versionCode = 1000000
+    versionName = "1.0.0"
 }

@@ -16,7 +16,7 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
-import com.renren.wawa.R;
+import com.wawaji.vip.R;
 import com.renren.wawa.utils.ScreenUtil;
 import com.renren.wawa.utils.ViewUtil;
 

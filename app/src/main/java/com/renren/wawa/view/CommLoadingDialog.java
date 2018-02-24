@@ -12,7 +12,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.TextView;
 
-import com.renren.wawa.R;
+import com.wawaji.vip.R;
 
 public class CommLoadingDialog extends Dialog implements DialogInterface.OnCancelListener, DialogInterface.OnShowListener {
 

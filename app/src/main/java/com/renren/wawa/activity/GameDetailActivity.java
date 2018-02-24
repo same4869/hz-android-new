@@ -11,7 +11,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.renren.wawa.R;
+import com.wawaji.vip.R;
 import com.renren.wawa.base.BaseTitleBarActivity;
 import com.renren.wawa.model.OrderRefundBean;
 import com.renren.wawa.model.UserGameDetailBean;

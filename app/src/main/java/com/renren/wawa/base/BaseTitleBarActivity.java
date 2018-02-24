@@ -5,7 +5,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.view.View;
 
-import com.renren.wawa.R;
+import com.wawaji.vip.R;
 import com.renren.wawa.config.Constants;
 import com.renren.wawa.interfaces.RoomObserver;
 import com.renren.wawa.manager.GameManager;

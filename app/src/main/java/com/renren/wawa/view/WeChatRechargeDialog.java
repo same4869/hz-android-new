@@ -14,7 +14,7 @@ import android.view.WindowManager;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
-import com.renren.wawa.R;
+import com.wawaji.vip.R;
 import com.renren.wawa.adapter.WeChatRechargeAdapter;
 import com.renren.wawa.app.WawaApplication;
 import com.renren.wawa.config.Constants;

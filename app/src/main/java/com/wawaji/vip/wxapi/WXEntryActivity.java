@@ -1,9 +1,9 @@
-package com.renren.wawa.wxapi;
+package com.wawaji.vip.wxapi;
 
 import android.os.Bundle;
 import android.os.Message;
 
-import com.renren.wawa.R;
+import com.wawaji.vip.R;
 import com.renren.wawa.app.WawaApplication;
 import com.renren.wawa.base.BaseActivity;
 import com.renren.wawa.config.Constants;

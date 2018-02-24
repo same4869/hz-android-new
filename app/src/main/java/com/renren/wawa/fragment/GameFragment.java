@@ -29,7 +29,7 @@ import android.widget.TextView;
 import com.google.protobuf.InvalidProtocolBufferException;
 import com.opendanmaku.DanmakuItem;
 import com.opendanmaku.DanmakuView;
-import com.renren.wawa.R;
+import com.wawaji.vip.R;
 import com.renren.wawa.activity.GameDetailActivity;
 import com.renren.wawa.activity.GameRoomActivity;
 import com.renren.wawa.activity.MyDollActivity;
@@ -182,7 +182,7 @@ public class GameFragment extends Fragment implements RoomObserver, ILVLiveConfi
     private int mBalance;
     private int mPrice = -1;
     private int mCountFix = 0;
-    private Vibrator mVibrator;
+//    private Vibrator mVibrator;
 
     private LinkedList<MemberUserBean> mMembers;
     private HashMap<Long, MemberUserBean> mMembersMap;
@@ -303,7 +303,7 @@ public class GameFragment extends Fragment implements RoomObserver, ILVLiveConfi
         mMembersMap = new HashMap<>();
 
         needSoundEffect = CommSetting.getSettingSoundEffect();
-        mVibrator = (Vibrator) getActivity().getSystemService(Context.VIBRATOR_SERVICE);
+//        mVibrator = (Vibrator) getActivity().getSystemService(Context.VIBRATOR_SERVICE);
 
         uid = UserManager.getCurUserId();
         token = CommSetting.getToken();
@@ -445,7 +445,7 @@ public class GameFragment extends Fragment implements RoomObserver, ILVLiveConfi
     @Override
     public void onDestroy() {
         //退出时将资源释放
-        mVibrator.cancel();
+//        mVibrator.cancel();
         clearOldData();
         if (countDownTimer != null) {
             countDownTimer.cancel();
@@ -645,7 +645,7 @@ public class GameFragment extends Fragment implements RoomObserver, ILVLiveConfi
     @OnClick(R.id.opt_catch)
     public void take() {
         if (hasMoved) {
-            mVibrator.vibrate(new long[]{100, 400}, -1);
+//            mVibrator.vibrate(new long[]{100, 400}, -1);
             if (gameSocketClient != null && !AppUtil.isFastDoubleClick()) {
                 gameSocketClient.sendGameControl(GameControlStatus.CRAWLING);//发送下爪的指令
             }
@@ -665,7 +665,7 @@ public class GameFragment extends Fragment implements RoomObserver, ILVLiveConfi
             //按下方向按钮之后，将按钮置为按下状态，并且播放对应的声音和震动
             hasMoved = true;//此值用于确保至少按一次方向键之后，才能允许按下爪按钮
             view.setPressed(true);
-            mVibrator.vibrate(new long[]{100, 400}, -1);
+//            mVibrator.vibrate(new long[]{100, 400}, -1);
             playSoundEffect(GameManager.SOUND_MOVE);
 
             switch (view.getId()) {

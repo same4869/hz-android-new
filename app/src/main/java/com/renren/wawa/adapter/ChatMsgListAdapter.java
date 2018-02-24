@@ -17,7 +17,7 @@ import android.widget.BaseAdapter;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 
-import com.renren.wawa.R;
+import com.wawaji.vip.R;
 import com.renren.wawa.model.ChatEntity;
 import com.renren.wawa.utils.BBLog;
 import com.renren.wawa.utils.StringUtil;

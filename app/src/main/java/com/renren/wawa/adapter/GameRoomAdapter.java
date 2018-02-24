@@ -8,7 +8,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.renren.wawa.R;
+import com.wawaji.vip.R;
 import com.renren.wawa.model.RoomInfoBean;
 import com.renren.wawa.utils.CircleTransform;
 import com.renren.wawa.utils.StringUtil;

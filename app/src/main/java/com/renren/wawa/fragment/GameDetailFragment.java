@@ -7,7 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.renren.wawa.R;
+import com.wawaji.vip.R;
 import com.renren.wawa.adapter.InvitePageAdapter;
 import com.renren.wawa.config.Constants;
 import com.renren.wawa.model.RoomInfoBean;

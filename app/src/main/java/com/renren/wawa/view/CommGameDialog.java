@@ -19,7 +19,7 @@ import android.widget.FrameLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.renren.wawa.R;
+import com.wawaji.vip.R;
 import com.renren.wawa.utils.AppUtil;
 import com.renren.wawa.utils.ScreenUtil;
 import com.renren.wawa.utils.ViewUtil;

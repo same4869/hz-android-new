@@ -5,7 +5,7 @@ import android.media.AudioManager;
 import android.media.SoundPool;
 
 import com.google.protobuf.InvalidProtocolBufferException;
-import com.renren.wawa.R;
+import com.wawaji.vip.R;
 import com.renren.wawa.app.WawaApplication;
 import com.renren.wawa.config.Constants;
 import com.renren.wawa.interfaces.RoomObserver;

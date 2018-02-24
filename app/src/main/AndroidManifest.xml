@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.renren.wawa">
+    package="com.wawaji.vip">
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -32,10 +32,10 @@
 
     <!-- 小米推送集成 -->
     <permission
-        android:name="com.renren.wawa.permission.MIPUSH_RECEIVE"
+        android:name="com.wawaji.vip.permission.MIPUSH_RECEIVE"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.renren.wawa.permission.MIPUSH_RECEIVE" />
+    <uses-permission android:name="com.wawaji.vip.permission.MIPUSH_RECEIVE" />
 
     <application
         android:name="com.renren.wawa.app.WawaApplication"
@@ -94,69 +94,69 @@
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.SettingMoneyActivity"
+            android:name="com.renren.wawa.activity.SettingMoneyActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.SettingActivity"
+            android:name="com.renren.wawa.activity.SettingActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.FeedbackActivity"
+            android:name="com.renren.wawa.activity.FeedbackActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.ScratchRecordActivity"
+            android:name="com.renren.wawa.activity.ScratchRecordActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.GameDetailActivity"
+            android:name="com.renren.wawa.activity.GameDetailActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.ScratchVideoActivity"
+            android:name="com.renren.wawa.activity.ScratchVideoActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.RequestSentOutGoodsActivty"
+            android:name="com.renren.wawa.activity.RequestSentOutGoodsActivty"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.AddNewAddressActivty"
+            android:name="com.renren.wawa.activity.AddNewAddressActivty"
             android:exported="false"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".activity.UserAddressListActivity"
+            android:name="com.renren.wawa.activity.UserAddressListActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.AddRemarksActivity"
+            android:name="com.renren.wawa.activity.AddRemarksActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.MyDollActivity"
+            android:name="com.renren.wawa.activity.MyDollActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.GameRoomActivity"
+            android:name="com.renren.wawa.activity.GameRoomActivity"
             android:exported="false"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.SigninActivity"
+            android:name="com.renren.wawa.activity.SigninActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.renren.wawa.wxapi.WXEntryActivity"
+            android:name=".wxapi.WXEntryActivity"
             android:exported="true" />
         <activity
-            android:name="com.renren.wawa.wxapi.WXPayEntryActivity"
+            android:name=".wxapi.WXPayEntryActivity"
             android:exported="true" />
 
-        <service android:name=".service.ScreenRecorderService" />
+        <service android:name="com.renren.wawa.service.ScreenRecorderService" />
 
-        <activity android:name=".activity.SettingNotificationActivity"
+        <activity android:name="com.renren.wawa.activity.SettingNotificationActivity"
             android:exported="true"
             android:screenOrientation="portrait" />
 
@@ -171,7 +171,7 @@
 
         <provider
             android:name="android.support.v4.content.FileProvider"
-            android:authorities="com.renren.wawa.fileProvider"
+            android:authorities="com.wawaji.vip.fileProvider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
@@ -217,12 +217,6 @@
                 <action android:name="android.intent.action.TIMEZONE_CHANGED" />
             </intent-filter>
         </receiver>
-
-
-
-
-
-
 
 
         <!-- 小米推送 -->

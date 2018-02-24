@@ -5,7 +5,7 @@ import android.app.ProgressDialog;
 import android.os.AsyncTask;
 
 import com.alibaba.fastjson.JSON;
-import com.renren.wawa.R;
+import com.wawaji.vip.R;
 
 import java.util.ArrayList;
 

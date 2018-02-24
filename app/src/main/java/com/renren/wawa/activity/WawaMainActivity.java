@@ -11,7 +11,7 @@ import android.widget.FrameLayout;
 
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigation;
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigationItem;
-import com.renren.wawa.R;
+import com.wawaji.vip.R;
 import com.renren.wawa.base.BaseTitleBarActivity;
 import com.renren.wawa.fragment.InviteFragment;
 import com.renren.wawa.fragment.RechargeFragment;
@@ -137,7 +137,7 @@ public class WawaMainActivity extends BaseTitleBarActivity {
         switch (position) {
             case 0:
 //              commTitleBarView.setVisibility(View.VISIBLE);
-                commTitleBarView.setTitleBarText("好抓抓娃娃");
+                commTitleBarView.setTitleBarText("VIP抓娃娃机");
                 commTitleBarView.setMenuText("");
                 commTitleBarView.setMenuIcon(null);
                 break;

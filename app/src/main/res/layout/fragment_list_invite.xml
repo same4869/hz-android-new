@@ -12,14 +12,14 @@
         <com.scwang.smartrefresh.layout.SmartRefreshLayout
             android:id="@+id/invite_list_refresh"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="@dimen/dp10">
+            android:layout_height="match_parent">
 
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/invite_recycler_view"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/bg_list_shape" />
+                android:background="@mipmap/invite_combined_shape"
+                android:padding="@dimen/dp40" />
 
         </com.scwang.smartrefresh.layout.SmartRefreshLayout>
 

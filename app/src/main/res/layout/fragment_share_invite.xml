@@ -4,20 +4,19 @@
     android:layout_height="match_parent"
     android:background="@color/view_bg_1">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/dp411"
         android:layout_centerInParent="true"
-        android:gravity="center_horizontal"
-        android:orientation="vertical">
+        android:gravity="center_horizontal">
 
         <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="@dimen/dp411">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/dp328"
+                android:layout_height="@dimen/dp411"
                 android:layout_centerInParent="true"
                 android:background="@mipmap/share_invite" />
 
@@ -25,7 +24,7 @@
                 android:id="@+id/invitation_tips"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dp130v"
+                android:layout_marginTop="@dimen/dp150v"
                 android:gravity="center"
                 android:paddingLeft="@dimen/dp80"
                 android:paddingRight="@dimen/dp80"
@@ -36,12 +35,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/dp20"
-                android:layout_marginTop="@dimen/dp51"
+                android:layout_marginTop="@dimen/dp79"
                 android:gravity="center"
+                android:text="000000"
                 android:paddingLeft="@dimen/dp20"
                 android:paddingRight="@dimen/dp20"
                 android:textColor="@color/white"
-                android:textSize="@dimen/sp18"
+                android:textSize="@dimen/sp20"
                 android:textStyle="bold" />
 
         </RelativeLayout>
@@ -50,11 +50,13 @@
             android:id="@+id/invitation_code_share_btn"
             android:layout_width="@dimen/dp180"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dp30v"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dp50"
             android:background="@drawable/shape_corner_login"
             android:paddingLeft="@dimen/dp10"
             android:paddingRight="@dimen/dp10"
             android:text="分享邀请码"
             android:textColor="@color/white" />
-    </LinearLayout>
+    </RelativeLayout>
 </RelativeLayout>

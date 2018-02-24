@@ -1,9 +1,14 @@
 package com.renren.wawa.fragment;
 
 import android.content.Intent;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.renren.wawa.R;
+import com.wawaji.vip.R;
 import com.renren.wawa.activity.MyDollActivity;
 import com.renren.wawa.activity.ScratchRecordActivity;
 import com.renren.wawa.activity.SettingNotificationActivity;
@@ -11,12 +16,13 @@ import com.renren.wawa.activity.UserAddressListActivity;
 import com.renren.wawa.model.UserInfo;
 import com.renren.wawa.net.HttpMethods;
 import com.renren.wawa.utils.StringUtil;
-import com.renren.wawa.view.CommFuctionEntryBar;
 import com.renren.wawa.view.CommRoundAngleImageView;
 import com.squareup.picasso.Picasso;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
 import butterknife.OnClick;
+import butterknife.Unbinder;
 import rx.Subscriber;
 
 public class UserFragment extends BaseFragment {
@@ -25,13 +31,21 @@ public class UserFragment extends BaseFragment {
     @BindView(R.id.user_name)
     TextView userName;
     @BindView(R.id.user_scratch_record)
-    CommFuctionEntryBar userScratchRecord;
+    LinearLayout userScratchRecord;
     @BindView(R.id.user_scratched_wawa)
-    CommFuctionEntryBar userScratchedWawa;
+    LinearLayout userScratchedWawa;
     @BindView(R.id.user_address_manage)
-    CommFuctionEntryBar userAddressManage;
+    LinearLayout userAddressManage;
     @BindView(R.id.user_notification)
-    CommFuctionEntryBar userNotification;
+    LinearLayout userNotification;
+//    @BindView(R.id.user_scratch_record)
+//    CommFuctionEntryBar userScratchRecord;
+//    @BindView(R.id.user_scratched_wawa)
+//    CommFuctionEntryBar userScratchedWawa;
+//    @BindView(R.id.user_address_manage)
+//    CommFuctionEntryBar userAddressManage;
+//    @BindView(R.id.user_notification)
+//    CommFuctionEntryBar userNotification;
 
     @Override
     public int getLayoutId() {
@@ -40,7 +54,7 @@ public class UserFragment extends BaseFragment {
 
 
     @OnClick(R.id.user_notification)
-    public void userNotificationClick(){
+    public void userNotificationClick() {
         Intent intent = new Intent(getActivity(), SettingNotificationActivity.class);
         startActivity(intent);
     }

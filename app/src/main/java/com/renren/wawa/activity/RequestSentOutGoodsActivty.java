@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.renren.wawa.R;
+import com.wawaji.vip.R;
 import com.renren.wawa.adapter.ProductorOrderAdapter;
 import com.renren.wawa.base.BaseTitleBarActivity;
 import com.renren.wawa.config.Constants;

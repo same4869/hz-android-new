@@ -7,7 +7,7 @@ import android.view.View;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
-import com.renren.wawa.R;
+import com.wawaji.vip.R;
 import com.renren.wawa.model.UserNotificationBean;
 import com.renren.wawa.utils.StringUtil;
 

@@ -25,7 +25,7 @@ import android.widget.ListView;
 import android.widget.ScrollView;
 import android.widget.Scroller;
 
-import com.renren.wawa.R;
+import com.wawaji.vip.R;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

@@ -38,7 +38,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 
-import com.renren.wawa.R;
+import com.wawaji.vip.R;
 import com.renren.wawa.adapter.GameRoomAdapter;
 import com.renren.wawa.app.WawaApplication;
 import com.renren.wawa.base.BaseTitleBarActivity;

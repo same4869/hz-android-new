@@ -6,7 +6,7 @@
 //
 //import com.chad.library.adapter.base.BaseQuickAdapter;
 //import com.chad.library.adapter.base.BaseViewHolder;
-//import com.renren.wawa.R;
+//import com.wawaji.vip.R;
 //import com.renren.wawa.model.UserGameDetailBean;
 //import com.renren.wawa.utils.StringUtil;
 //

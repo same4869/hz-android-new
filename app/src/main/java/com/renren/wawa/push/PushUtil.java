@@ -11,7 +11,7 @@ import android.support.v4.app.NotificationCompat;
 
 
 import com.huawei.android.pushagent.api.PushManager;
-import com.renren.wawa.R;
+import com.wawaji.vip.R;
 import com.renren.wawa.app.WawaApplication;
 import com.renren.wawa.config.Constants;
 import com.renren.wawa.utils.BBLog;

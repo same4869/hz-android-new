@@ -7,7 +7,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
-import com.renren.wawa.R;
+import com.wawaji.vip.R;
 import com.renren.wawa.adapter.NotificationAdapter;
 import com.renren.wawa.base.BaseTitleBarActivity;
 import com.renren.wawa.model.UserNotificationBean;

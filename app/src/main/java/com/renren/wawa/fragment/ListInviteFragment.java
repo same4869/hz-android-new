@@ -5,7 +5,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.LinearLayout;
 
-import com.renren.wawa.R;
+import com.wawaji.vip.R;
 import com.renren.wawa.adapter.ListInviteAdapter;
 import com.renren.wawa.config.Constants;
 import com.renren.wawa.model.ListInviteBean;

@@ -9,7 +9,7 @@ import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
 
-import com.renren.wawa.R;
+import com.wawaji.vip.R;
 import com.renren.wawa.utils.AppUtil;
 
 public class CountdownView extends View {

@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
-import com.renren.wawa.R;
+import com.wawaji.vip.R;
 import com.renren.wawa.adapter.UserAddressAdapter;
 import com.renren.wawa.base.BaseTitleBarActivity;
 import com.renren.wawa.model.BaseObject;

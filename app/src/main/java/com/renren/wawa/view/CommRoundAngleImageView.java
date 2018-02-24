@@ -15,7 +15,7 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.renren.wawa.R;
+import com.wawaji.vip.R;
 
 /**
  * 圆形图片

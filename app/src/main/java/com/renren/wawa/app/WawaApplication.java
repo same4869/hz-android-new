@@ -12,7 +12,7 @@ import android.preference.PreferenceManager;
 import android.support.multidex.MultiDexApplication;
 import android.support.v4.content.LocalBroadcastManager;
 
-import com.renren.wawa.R;
+import com.wawaji.vip.R;
 import com.renren.wawa.activity.SigninActivity;
 import com.renren.wawa.config.Constants;
 import com.renren.wawa.manager.BuglyUpgrade;

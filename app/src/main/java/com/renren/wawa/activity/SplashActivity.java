@@ -6,7 +6,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.support.annotation.Nullable;
 
-import com.renren.wawa.R;
+import com.wawaji.vip.R;
 import com.renren.wawa.base.BaseActivity;
 import com.renren.wawa.config.Constants;
 import com.renren.wawa.manager.GameManager;

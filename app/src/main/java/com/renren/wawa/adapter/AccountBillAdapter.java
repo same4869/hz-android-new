@@ -5,7 +5,7 @@ import android.graphics.Color;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
-import com.renren.wawa.R;
+import com.wawaji.vip.R;
 import com.renren.wawa.model.UserWalletFlowBean;
 
 import java.util.List;

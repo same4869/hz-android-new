@@ -35,71 +35,163 @@
 
     </RelativeLayout>
 
-    <com.renren.wawa.view.CommFuctionEntryBar
-        android:id="@+id/user_scratch_record"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/dp48"
-        android:layout_marginStart="@dimen/dp16"
-        app:fuctionIconRes="@drawable/icon_record"
-        app:fuctionPaddingLeft="0dp"
-        app:fuctionShowTopLine="false"
-        app:fuctionSwitch="false"
-        app:fuctionTitle="抓取记录" />
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1px"
-        android:layout_marginStart="@dimen/dp15"
-        android:background="@color/seperator" />
+        <LinearLayout
+            android:id="@+id/user_scratch_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10v"
+            android:layout_weight="1"
+            android:orientation="vertical">
 
-    <com.renren.wawa.view.CommFuctionEntryBar
-        android:id="@+id/user_scratched_wawa"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/dp48"
-        android:layout_marginStart="@dimen/dp16"
-        app:fuctionIconRes="@drawable/icon_wawa"
-        app:fuctionPaddingLeft="0dp"
-        app:fuctionShowTopLine="true"
-        app:fuctionSwitch="false"
-        app:fuctionTitle="我的娃娃" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/icon_record" />
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1px"
-        android:layout_marginStart="@dimen/dp15"
-        android:background="@color/seperator" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="抓取记录" />
 
-    <com.renren.wawa.view.CommFuctionEntryBar
-        android:id="@+id/user_address_manage"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/dp48"
-        android:layout_marginStart="@dimen/dp16"
-        app:fuctionIconRes="@drawable/icon_address"
-        app:fuctionPaddingLeft="0dp"
-        app:fuctionShowTopLine="true"
-        app:fuctionSwitch="false"
-        app:fuctionTitle="地址管理" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/user_scratched_wawa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10v"
+            android:layout_weight="1"
+            android:orientation="vertical">
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1px"
-        android:layout_marginStart="@dimen/dp15"
-        android:background="@color/seperator" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/icon_wawa" />
 
-    <com.renren.wawa.view.CommFuctionEntryBar
-        android:id="@+id/user_notification"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/dp48"
-        android:layout_marginStart="@dimen/dp16"
-        app:fuctionIconRes="@drawable/icon_msg"
-        app:fuctionPaddingLeft="0dp"
-        app:fuctionShowTopLine="true"
-        app:fuctionSwitch="false"
-        app:fuctionTitle="我的通知" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="我的娃娃" />
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1px"
-        android:background="@color/seperator" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/user_address_manage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10v"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/icon_address" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="地址管理" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/user_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10v"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/icon_msg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="我的通知" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--<com.renren.wawa.view.CommFuctionEntryBar-->
+    <!--android:id="@+id/user_scratch_record"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/dp48"-->
+    <!--android:layout_marginStart="@dimen/dp16"-->
+    <!--app:fuctionIconRes="@drawable/icon_record"-->
+    <!--app:fuctionPaddingLeft="0dp"-->
+    <!--app:fuctionShowTopLine="false"-->
+    <!--app:fuctionSwitch="false"-->
+    <!--app:fuctionTitle="抓取记录" />-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1px"-->
+    <!--android:layout_marginStart="@dimen/dp15"-->
+    <!--android:background="@color/seperator" />-->
+
+    <!--<com.renren.wawa.view.CommFuctionEntryBar-->
+    <!--android:id="@+id/user_scratched_wawa"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/dp48"-->
+    <!--android:layout_marginStart="@dimen/dp16"-->
+    <!--app:fuctionIconRes="@drawable/icon_wawa"-->
+    <!--app:fuctionPaddingLeft="0dp"-->
+    <!--app:fuctionShowTopLine="true"-->
+    <!--app:fuctionSwitch="false"-->
+    <!--app:fuctionTitle="我的娃娃" />-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1px"-->
+    <!--android:layout_marginStart="@dimen/dp15"-->
+    <!--android:background="@color/seperator" />-->
+
+    <!--<com.renren.wawa.view.CommFuctionEntryBar-->
+    <!--android:id="@+id/user_address_manage"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/dp48"-->
+    <!--android:layout_marginStart="@dimen/dp16"-->
+    <!--app:fuctionIconRes="@drawable/icon_address"-->
+    <!--app:fuctionPaddingLeft="0dp"-->
+    <!--app:fuctionShowTopLine="true"-->
+    <!--app:fuctionSwitch="false"-->
+    <!--app:fuctionTitle="地址管理" />-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1px"-->
+    <!--android:layout_marginStart="@dimen/dp15"-->
+    <!--android:background="@color/seperator" />-->
+
+    <!--<com.renren.wawa.view.CommFuctionEntryBar-->
+    <!--android:id="@+id/user_notification"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/dp48"-->
+    <!--android:layout_marginStart="@dimen/dp16"-->
+    <!--app:fuctionIconRes="@drawable/icon_msg"-->
+    <!--app:fuctionPaddingLeft="0dp"-->
+    <!--app:fuctionShowTopLine="true"-->
+    <!--app:fuctionSwitch="false"-->
+    <!--app:fuctionTitle="我的通知" />-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1px"-->
+    <!--android:background="@color/seperator" />-->
 
 </LinearLayout>

@@ -6,7 +6,6 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.renren.wawa.R;
 import com.renren.wawa.base.BaseTitleBarActivity;
 import com.renren.wawa.model.BaseObject;
 import com.renren.wawa.model.UserAddressBean;
@@ -16,6 +15,7 @@ import com.renren.wawa.utils.AddressPickTask;
 import com.renren.wawa.utils.BBLog;
 import com.renren.wawa.utils.StringUtil;
 import com.renren.wawa.utils.ToastUtil;
+import com.wawaji.vip.R;
 
 import butterknife.BindView;
 import butterknife.OnClick;

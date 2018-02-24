@@ -8,12 +8,12 @@ public class Constants {
     public static final String TAG = "hwawaji-debug";
     public final static String BROADCAST_LOGOUT = "login_out";
 
-    public static final String BASE_URL = "https://renrenzww.com/renren/";//"http://182.254.221.82/renren/";
+    public static final String BASE_URL = "http://vip.renrenzww.com/renren/";//"https://renrenzww.com/renren/";//"http://182.254.221.82/renren/";
 
     //微信开放平台 AppID
-    public static final String WE_CHAT_APP_ID = "wx6f3ca1f2508dbca9";
+    public static final String WE_CHAT_APP_ID = "wxab5a54dbf3dc70de";//"wx6f3ca1f2508dbca9";
 
-    public static final int TENCENT_APP_ID = 1400059084 ;//1400045378;
+    public static final int TENCENT_APP_ID = 1400059084;//1400045378;
     public static final int TENCENT_ACCOUNT_TYPE = 21129;//18060;
 
     public static final String MIPUSH_APPID = "2882303761517678491";

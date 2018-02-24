@@ -3,7 +3,7 @@ package com.renren.wawa.utils;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 
-import com.renren.wawa.R;
+import com.wawaji.vip.R;
 import com.renren.wawa.app.WawaApplication;
 import com.renren.wawa.model.ShareContent;
 import com.renren.wawa.model.ShareContentText;

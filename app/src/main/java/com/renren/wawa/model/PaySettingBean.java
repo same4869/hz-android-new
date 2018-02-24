@@ -28,6 +28,15 @@ public class PaySettingBean extends BaseObject {
         private String text;
         private int original_coin;
         private int plus_coin;
+        private int is_first;
+
+        public int getIs_first() {
+            return is_first;
+        }
+
+        public void setIs_first(int is_first) {
+            this.is_first = is_first;
+        }
 
         public int getOriginal_coin() {
             return original_coin;

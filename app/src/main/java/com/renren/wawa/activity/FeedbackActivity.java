@@ -3,7 +3,7 @@ package com.renren.wawa.activity;
 import android.text.TextUtils;
 import android.widget.EditText;
 
-import com.renren.wawa.R;
+import com.wawaji.vip.R;
 import com.renren.wawa.base.BaseTitleBarActivity;
 import com.renren.wawa.model.BaseObject;
 import com.renren.wawa.net.HttpMethods;
